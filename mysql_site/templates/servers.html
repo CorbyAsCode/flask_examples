@@ -1,0 +1,13 @@
+<!doctype html>
+<title>Servers</title>
+<table>
+  <tr>
+    <th>Hostname</th><th>IP</th><th>Kernel Release</th>
+  </tr>
+  {% for host in vals %}
+    <tr>
+      <td>{{ host['hostname'] }}</td><td>{{ host['ipaddress'] }}</td><td>{{ host['kernel_release'] }}</td>
+    </tr>
+  {% endfor %}
+</table>
+</html>
